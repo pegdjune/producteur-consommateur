@@ -1,0 +1,14 @@
+name: C/C++ CI
+
+on: [push]
+  
+
+jobs:
+  check-bats-version:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - run: gcc producer-consommer -o prodcons
+    - run: ./prodcons 2 2 6
