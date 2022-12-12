@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: gcc producer-consommer.c -o prodcons
-    - run: ./prodcons 2 2 6
+#    - run: ./prodcons 2 2 6
